@@ -1,0 +1,705 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #212121;
+  color: white;
+}
+
+/* Header */
+header {
+  background-color: #292c36;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  color: #4a90e2;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 100px 20px;
+  height: 100vh;
+  background-color: #111;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.hero-text .highlight {
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #357ac9;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #357ac9;
+}
+
+/* Hero Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 400px; /* Sesuaikan ukuran sesuai kebutuhan */
+  height: 400px; /* Sama dengan width agar gambar bulat */
+  border-radius: 50%;
+  object-fit: cover; /* Pastikan gambar memenuhi area */
+}
+
+/* Section About */
+#about {
+  background-color: #111;
+  padding: 60px 10%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Container untuk konten */
+.about-content {
+  display: flex;
+  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  gap: 40px;
+  max-width: 1000px;
+}
+
+/* Gambar workspace */
+.about-content img {
+  width: 320px;
+  border-radius: 8px;
+  border: 2px solid #357ac9;
+}
+
+/* About Me sejajar dengan nama */
+.about-text h3 {
+  font-size: 16px;
+  color: #357ac9;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block; /* Supaya tidak turun ke bawah */
+  margin-right: 15px; /* Spasi antara About Me dan Nama */
+}
+
+/* Nama utama */
+.about-text h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block; /* Supaya sejajar dengan About Me */
+}
+
+/* Deskripsi */
+.about-text p {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* Section Skills */
+#skills {
+  background-color: #111;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* SKILLS Title */
+#skills h3 {
+  font-size: 14px;
+  color: #357ac9;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Specializing In */
+#skills h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Container Skills */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Skill Card */
+.skill-card {
+  background-color: #1c1c1c; /* Warna card */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 220px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon dalam card */
+.skill-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Judul skill */
+.skill-card h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* Deskripsi skill */
+.skill-card p {
+  font-size: 12px;
+  color: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 90%;
+  }
+}
+
+/* Section Portfolio */
+#portfolio {
+  background-color: #111; /* Background hitam */
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* Portfolio Title */
+#portfolio h3 {
+  font-size: 14px;
+  color: #357ac9; /* Warna biru */
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Latest Projects */
+#portfolio h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Container Portfolio */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card Portfolio */
+.portfolio-item {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Gambar Portfolio */
+.portfolio-item img {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 15px;
+}
+
+/* Judul Portfolio */
+.portfolio-item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Tombol View Demo */
+.portfolio-item .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #357ac9;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.portfolio-item .btn:hover {
+  background-color: #357ac9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-item {
+    width: 90%;
+  }
+}
+
+/* Section Why Hire Me */
+#why-hire-me {
+  background-color: #111; /* Warna background hitam */
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* Judul Section */
+#why-hire-me h3 {
+  font-size: 14px;
+  color: #357ac9; /* Warna biru */
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Subjudul */
+#why-hire-me h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Container untuk Cards */
+#why-hire-me > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card Why Hire Me */
+#why-hire-me > div > div {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Judul Card */
+#why-hire-me h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Deskripsi Card */
+#why-hire-me p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* Section Testimonials */
+#testimonials {
+  background-color: #111;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* Judul Section */
+#testimonials h3 {
+  font-size: 14px;
+  color: #357ac9;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#testimonials h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Container Testimonial */
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Card Testimonial */
+.testimonial {
+  background-color: transparent;
+  border: 1px solid #357ac9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px; /* Ukuran tetap */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efek hover */
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+/* Bintang Rating */
+.testimonial p:first-child {
+  font-size: 18px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* Kutipan */
+.testimonial blockquote {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Informasi Klien */
+.client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Foto Klien */
+.client-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #357ac9;
+  margin-bottom: 10px;
+}
+
+/* Nama Klien */
+.client-info p strong {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Perusahaan */
+.client-info p:last-child {
+  font-size: 14px;
+  color: #357ac9;
+}
+
+/* Section Contact */
+#contact {
+  background-color: #111;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* Judul Section */
+#contact h3 {
+  font-size: 14px;
+  color: #357ac9;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#contact h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+/* Form Styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Setiap Row Form */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+/* Input dalam Dua Kolom */
+.form-group input {
+  width: 100%;
+}
+
+/* Input dan Textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #fff;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Label */
+form label {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Checkbox Styling */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+/* Tombol Submit */
+button {
+  width: 200px;
+  background: #357ac9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #2a5b91;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: #292c36; /* Warna latar belakang footer */
+  color: white;
+  padding: 40px 10%;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Bagian atas footer */
+footer div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navigasi Footer */
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+footer nav ul li {
+  display: inline;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 12px; /* Ukuran teks lebih kecil */
+  transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+  color: #357ac9; /* Warna saat hover */
+}
+
+/* Sosial Media */
+footer div:first-child > div {
+  display: flex;
+  gap: 15px;
+}
+
+footer div:first-child img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Warna putih */
+  transition: transform 0.3s ease;
+}
+
+footer div:first-child img:hover {
+  transform: scale(1.2);
+}
+
+/* Garis pemisah */
+footer hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+/* Bagian bawah footer */
+footer div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Teks copyright */
+footer p {
+  margin: 0;
+}
+
+/* Navigasi bawah */
+footer div:last-child nav ul {
+  gap: 15px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  footer div:first-child {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer div:last-child {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Talitha</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -18,7 +18,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#why-hire">Why Hire Me</a></li>
+          <li><a href="#why-hire-me">Why Hire Me</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -41,42 +41,50 @@
           <a href="#about" class="btn">More About Me</a>
         </div>
         <div class="hero-image">
-          <img src="avatar.png" alt="Profile Picture" />
+          <img src="images/talitha-profile.jpg" alt="Profile Picture" />
         </div>
       </div>
     </section>
 
     <section id="about">
-      <h2>About Me</h2>
       <div class="about-content">
-        <img src="workspace.jpg" alt="Workspace" />
-
-        <h2>I’m Talitha Ramadhani Nur Azizah</h2>
-        <p>
-          I’m a passionate Frontend Developer with a strong focus on creating
-          beautiful, user-friendly, and high-performance websites. With
-          expertise in HTML, CSS, and JavaScript, I turn ideas into seamless
-          digital experiences.
-        </p>
-        <p>
-          I prioritize clean code, responsive design, and performance
-          optimization to ensure every website I build is fast, accessible, and
-          engaging. Always eager to learn and adapt, I stay up to date with the
-          latest web technologies to deliver modern and efficient solutions.
-        </p>
+        <img src="images/workspace.jpg" alt="Workspace" />
+        <div class="about-text">
+          <h3>About Me</h3>
+          <br />
+          <h2>I’m Talitha Ramadhani Nur Azizah</h2>
+          <p>
+            I am a Frontend Developer and UI/UX Designer passionate about
+            creating engaging, functional, and responsive digital experiences.
+            With expertise in HTML, CSS, JavaScript, and UI design using Figma,
+            I strive to turn ideas into visually appealing and user-friendly
+            interfaces.
+          </p>
+          <p>
+            I believe that great design should align with performance and
+            accessibility. That’s why I prioritize clean code, responsiveness,
+            and an optimal user experience. Always eager to learn and adapt, I
+            stay up to date with the latest technologies to build modern and
+            efficient web solutions.
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="skills">
+      <h3>Skills</h3>
       <h2>Specializing In</h2>
       <div class="skills-container">
         <div class="skill-card">
-          <img src="frontend-icon.png" alt="Front-end Development Icon" />
+          <img
+            src="images/frontend-icon.png"
+            alt="Front-end Development Icon"
+          />
           <h4>Front-end Development</h4>
           <p>HTML, CSS, JavaScript</p>
         </div>
         <div class="skill-card">
-          <img src="uiux-icon.png" alt="UI/UX Designer Icon" />
+          <img src="images/uiux-icon.png" alt="UI/UX Designer Icon" />
           <h4>UI/UX Designer</h4>
           <p>Figma</p>
         </div>
@@ -84,21 +92,22 @@
     </section>
 
     <section id="portfolio">
-      <h2>LATEST PROJECTS</h2>
+      <h3>Portofolio</h3>
+      <h2>Latest Project</h2>
       <div class="portfolio-container">
         <div class="portfolio-item">
-          <img src="needfood.png" alt="Need Food App Design" />
-          <h4>Need Food App Design</h4>
+          <img src="images/porto1.png" alt="RizqiBatik E-commerce Web Design" />
+          <h4>RizqiBatik E-commerce Web Design</h4>
           <a href="#" class="btn">View Demo</a>
         </div>
         <div class="portfolio-item">
-          <img src="cafe-street.png" alt="Cafe Street Web Design" />
-          <h4>Cafe Street Web Design</h4>
+          <img src="images/porto2.png" alt="BlushBloom Web Design" />
+          <h4>BlushBloom Web Design</h4>
           <a href="#" class="btn">View Demo</a>
         </div>
         <div class="portfolio-item">
-          <img src="travel-app.png" alt="Travel App Design" />
-          <h4>Travel App Design</h4>
+          <img src="images/porto3.png" alt="MenuInsight Web Design" />
+          <h4>MenuInsight Web Design</h4>
           <a href="#" class="btn">View Demo</a>
         </div>
       </div>
@@ -140,83 +149,98 @@
     </section>
 
     <section id="testimonials">
-      <h2>TESTIMONIALS</h2>
-      <h3>WHAT’S CLIENT SAY ABOUT ME</h3>
+      <h3>TESTIMONIALS</h3>
+      <h2>What's Client Say About Me</h2>
 
-      <div class="testimonial">
-        <p>⭐⭐⭐⭐⭐</p>
-        <blockquote>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis
-          viverra."
-        </blockquote>
-        <div class="client-info">
-          <img src="dianne.jpg" alt="Dianne Russell" />
-          <p><strong>Dianne Russell</strong></p>
-          <p>Starbucks</p>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <p>⭐⭐⭐⭐⭐</p>
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra."
+          </blockquote>
+          <div class="client-info">
+            <img src="images/client-foto.jpg" alt="Dianne Russell" />
+            <p><strong>Dianne Russell</strong></p>
+            <p>Starbucks</p>
+          </div>
         </div>
-      </div>
 
-      <div class="testimonial">
-        <p>⭐⭐⭐⭐⭐</p>
-        <blockquote>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis
-          viverra."
-        </blockquote>
-        <div class="client-info">
-          <img src="kristin.jpg" alt="Kristin Watson" />
-          <p><strong>Kristin Watson</strong></p>
-          <p>Louis Vuitton</p>
+        <div class="testimonial">
+          <p>⭐⭐⭐⭐⭐</p>
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra."
+          </blockquote>
+          <div class="client-info">
+            <img src="images/client-foto.jpg" alt="Kristin Watson" />
+            <p><strong>Kristin Watson</strong></p>
+            <p>Louis Vuitton</p>
+          </div>
         </div>
-      </div>
 
-      <div class="testimonial">
-        <p>⭐⭐⭐⭐⭐</p>
-        <blockquote>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis
-          viverra."
-        </blockquote>
-        <div class="client-info">
-          <img src="kathryn.jpg" alt="Kathryn Murphy" />
-          <p><strong>Kathryn Murphy</strong></p>
-          <p>McDonald's</p>
+        <div class="testimonial">
+          <p>⭐⭐⭐⭐⭐</p>
+          <blockquote>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi
+            quis viverra."
+          </blockquote>
+          <div class="client-info">
+            <img src="images/client-foto.jpg" alt="Kathryn Murphy" />
+            <p><strong>Kathryn Murphy</strong></p>
+            <p>McDonald's</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>CONTACT ME</h2>
-      <h3>LET’S BUILD SOMETHING AMAZING</h3>
+      <h3>CONTACT ME</h3>
+      <h2>LET’S BUILD SOMETHING AMAZING</h2>
 
       <form action="#" method="POST">
-        <div>
-          <label for="first-name">First name</label>
-          <input type="text" id="first-name" name="first-name" required />
+        <!-- Form Group untuk Nama -->
+        <div class="form-group">
+          <div>
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
 
-          <label for="last-name">Last name</label>
-          <input type="text" id="last-name" name="last-name" required />
+          <div>
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
         </div>
 
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+        <!-- Form Group untuk Email & Phone -->
+        <div class="form-group">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-          <label for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" />
+          <div>
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
         </div>
 
+        <!-- Message -->
         <div>
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
 
-        <div>
+        <!-- Checkbox -->
+        <div class="checkbox-group">
           <input type="checkbox" id="terms" name="terms" required />
           <label for="terms">I accept the terms</label>
         </div>
 
+        <!-- Button Submit -->
         <button type="submit">Submit</button>
       </form>
     </section>
@@ -236,9 +260,9 @@
           </ul>
         </nav>
         <div>
-          <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
-          <a href="#"><img src="email-icon.png" alt="Email" /></a>
-          <a href="#"><img src="github-icon.png" alt="GitHub" /></a>
+          <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+          <a href="#"><img src="images/email.png" alt="Email" /></a>
+          <a href="#"><img src="images/github.png" alt="GitHub" /></a>
         </div>
       </div>
 
