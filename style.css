@@ -115,10 +115,10 @@ nav ul li a:hover {
 }
 
 .hero-image img {
-  width: 400px; /* Sesuaikan ukuran sesuai kebutuhan */
-  height: 400px; /* Sama dengan width agar gambar bulat */
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
-  object-fit: cover; /* Pastikan gambar memenuhi area */
+  object-fit: cover;
 }
 
 /* Section About */
@@ -133,7 +133,7 @@ nav ul li a:hover {
 /* Container untuk konten */
 .about-content {
   display: flex;
-  align-items: center; /* Menyelaraskan elemen secara vertikal */
+  align-items: center;
   gap: 40px;
   max-width: 1000px;
 }
@@ -151,8 +151,8 @@ nav ul li a:hover {
   color: #357ac9;
   font-weight: bold;
   text-transform: uppercase;
-  display: inline-block; /* Supaya tidak turun ke bawah */
-  margin-right: 15px; /* Spasi antara About Me dan Nama */
+  display: inline-block;
+  margin-right: 15px;
 }
 
 /* Nama utama */
@@ -160,7 +160,7 @@ nav ul li a:hover {
   font-size: 26px;
   font-weight: bold;
   color: #fff;
-  display: inline-block; /* Supaya sejajar dengan About Me */
+  display: inline-block;
 }
 
 /* Deskripsi */
@@ -204,7 +204,7 @@ nav ul li a:hover {
 
 /* Skill Card */
 .skill-card {
-  background-color: #1c1c1c; /* Warna card */
+  background-color: #1c1c1c;
   padding: 20px;
   border-radius: 10px;
   text-align: left;
@@ -249,16 +249,16 @@ nav ul li a:hover {
 }
 
 /* Section Portfolio */
-#portfolio {
-  background-color: #111; /* Background hitam */
+#portofolio {
+  background-color: #111;
   padding: 60px 10%;
   text-align: center;
 }
 
 /* Portfolio Title */
-#portfolio h3 {
+#portofolio h3 {
   font-size: 14px;
-  color: #357ac9; /* Warna biru */
+  color: #357ac9;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -266,7 +266,7 @@ nav ul li a:hover {
 }
 
 /* Latest Projects */
-#portfolio h2 {
+#portofolio h2 {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
@@ -274,7 +274,7 @@ nav ul li a:hover {
 }
 
 /* Container Portfolio */
-.portfolio-container {
+.portofolio-container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -282,7 +282,7 @@ nav ul li a:hover {
 }
 
 /* Card Portfolio */
-.portfolio-item {
+.portofolio-item {
   background-color: #1c1c1c;
   padding: 20px;
   border-radius: 10px;
@@ -292,14 +292,14 @@ nav ul li a:hover {
 }
 
 /* Gambar Portfolio */
-.portfolio-item img {
+.portofolio-item img {
   width: 100%;
   border-radius: 9px;
   margin-bottom: 15px;
 }
 
 /* Judul Portfolio */
-.portfolio-item h4 {
+.portofolio-item h4 {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
@@ -307,7 +307,7 @@ nav ul li a:hover {
 }
 
 /* Tombol View Demo */
-.portfolio-item .btn {
+.portofolio-item .btn {
   display: inline-block;
   padding: 8px 16px;
   background-color: #357ac9;
@@ -319,7 +319,7 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
-.portfolio-item .btn:hover {
+.portofolio-item .btn:hover {
   background-color: #357ac9;
 }
 
@@ -337,7 +337,7 @@ nav ul li a:hover {
 
 /* Section Why Hire Me */
 #why-hire-me {
-  background-color: #111; /* Warna background hitam */
+  background-color: #111;
   padding: 60px 10%;
   text-align: center;
 }
@@ -345,7 +345,7 @@ nav ul li a:hover {
 /* Judul Section */
 #why-hire-me h3 {
   font-size: 14px;
-  color: #357ac9; /* Warna biru */
+  color: #357ac9;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -432,7 +432,7 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  width: 300px; /* Ukuran tetap */
+  width: 300px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
@@ -596,7 +596,7 @@ button:hover {
 }
 
 footer {
-  background-color: #292c36; /* Warna latar belakang footer */
+  background-color: #292c36;
   color: white;
   padding: 40px 10%;
   text-align: center;
@@ -635,12 +635,12 @@ footer nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 12px; /* Ukuran teks lebih kecil */
+  font-size: 12px;
   transition: color 0.3s ease;
 }
 
 footer nav ul li a:hover {
-  color: #357ac9; /* Warna saat hover */
+  color: #357ac9;
 }
 
 /* Sosial Media */
@@ -652,7 +652,7 @@ footer div:first-child > div {
 footer div:first-child img {
   width: 20px;
   height: 20px;
-  filter: brightness(0) invert(1); /* Warna putih */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s ease;
 }
 
@@ -701,5 +701,44 @@ footer div:last-child nav ul {
   footer nav ul {
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+/* Tombol Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Navigasi */
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin: 0 15px;
+}
+
+/* Responsif: Saat layar kecil, sembunyikan menu default */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #292c36;
+    text-align: center;
+  }
+
+  .nav-menu.active {
+    display: flex;
   }
 }
