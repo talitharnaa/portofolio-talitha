@@ -11,7 +11,7 @@ if ($koneksi->connect_error) {
 $first_name = $_POST['first_name'] ?? '';
 $last_name  = $_POST['last_name'] ?? '';
 $email      = $_POST['email'] ?? '';
-$phone      = $_POST['phone'] ?? '';
+$phone      = $_POST['phone_number'] ?? '';
 $message    = $_POST['message'] ?? '';
 
 // Siapkan dan eksekusi query dengan prepared statement
